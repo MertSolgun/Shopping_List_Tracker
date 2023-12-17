@@ -1,7 +1,9 @@
 <h1 align="center">
 <img src="https://github.com/MertSolgun/Shopping_List_Tracker/assets/115940928/ac05ab79-77ea-4c7e-87ec-601ff3802437" width="100px"> 
   
-  Shopping_List_Tracker
+  Shopping List Tracker
+  <a href="https://shopping-list-tracker.vercel.app/">
+  Live
 </h1> 
 
 <img src="https://github.com/MertSolgun/Shopping_List_Tracker/assets/115940928/5dffd592-003e-4d7d-b2cc-2b94ff647654" width="100%"> 
