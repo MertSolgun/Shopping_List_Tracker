@@ -4,6 +4,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import Swal from 'sweetalert2'
 
 function ShowExpenses({ everyexpenses, handleDelete, handleEdit }) {
   const [expenval, setExpenVal] = useState(everyexpenses.expenses);
@@ -16,7 +17,10 @@ function ShowExpenses({ everyexpenses, handleDelete, handleEdit }) {
 
   const handleSubmit = () => {
     if (!expenval.trim()) {
-      alert("error");
+      Swal.fire({
+        icon: "warning",
+        title: "The field to be edited cannot be empty.",
+      });
     } else {
       handleEdit(everyexpenses.id, expenval);
       setIsEditing(false);
